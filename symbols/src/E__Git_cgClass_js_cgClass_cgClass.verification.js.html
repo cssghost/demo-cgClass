@@ -16,14 +16,14 @@
 <span class='line'>  9</span>  * @since version 1.0 
 <span class='line'> 10</span>  * @param {Object} options 参数对象数据
 <span class='line'> 11</span>  * @param {jQuery Object} options.wrap 需要验证的表格包裹的jquery dom
-<span class='line'> 12</span>  * @param {css class} options.hookDom 被验证项的钩子名称
-<span class='line'> 13</span>  * @param {css class} options.inputWrap 被验证项的单行包裹，提示验证结果用
+<span class='line'> 12</span>  * @param {jQuery class} options.hookDom 被验证项的钩子名称
+<span class='line'> 13</span>  * @param {jQuery class} options.inputWrap 被验证项的单行包裹，提示验证结果用
 <span class='line'> 14</span>  * @param {Object} options.map 附加验证条件
 <span class='line'> 15</span>  * @param {jQuery Object} options.btn 触发提交事件的按钮
 <span class='line'> 16</span>  * @param {Object} options.parseAjaxData 附加ajax data
 <span class='line'> 17</span>  * @param {Function} options.successTemp 返回成功提示的html片段
 <span class='line'> 18</span>  * @param {Function} options.errorTemp 返回错误提示的html片段
-<span class='line'> 19</span>  * @param {css class} options.otherInput 特殊input的钩子名称
+<span class='line'> 19</span>  * @param {jQuery class} options.otherInput 特殊input的钩子名称
 <span class='line'> 20</span>  * @param {Function} options.init 验证前的附加事件
 <span class='line'> 21</span>  * @param {Function} options.error 验证错误时候的附加事件
 <span class='line'> 22</span>  * @param {Function} options.success 验证成功时候的附加事件
@@ -41,13 +41,13 @@
 <span class='line'> 34</span> </span><span class="WHIT">			        </span><span class="NAME">wrap</span><span class="WHIT"> </span><span class="PUNC">:</span><span class="WHIT"> </span><span class="NAME">$</span><span class="PUNC">(</span><span class="STRN">".wrap"</span><span class="PUNC">)</span><span class="PUNC">,</span><span class="WHIT">
 <span class='line'> 35</span> </span><span class="WHIT">			        </span><span class="COMM">/**
 <span class='line'> 36</span> 			         * 被验证项的钩子名称
-<span class='line'> 37</span> 			         * @type css class
+<span class='line'> 37</span> 			         * @type jQuery class
 <span class='line'> 38</span> 			         * @default ".Js-verification"
 <span class='line'> 39</span> 			         */</span><span class="WHIT">
 <span class='line'> 40</span> </span><span class="WHIT">			        </span><span class="NAME">hookDom</span><span class="PUNC">:</span><span class="WHIT"> </span><span class="STRN">".Js-verification"</span><span class="PUNC">,</span><span class="WHIT">
 <span class='line'> 41</span> </span><span class="WHIT">			        </span><span class="COMM">/**
 <span class='line'> 42</span> 			         * 被验证项的单行包裹，提示验证结果用
-<span class='line'> 43</span> 			         * @type css class
+<span class='line'> 43</span> 			         * @type jQuery class
 <span class='line'> 44</span> 			         * @default ".input-wrap"
 <span class='line'> 45</span> 			         */</span><span class="WHIT">
 <span class='line'> 46</span> </span><span class="WHIT">			        </span><span class="NAME">inputWrap</span><span class="WHIT"> </span><span class="PUNC">:</span><span class="WHIT"> </span><span class="STRN">".input-wrap"</span><span class="PUNC">,</span><span class="WHIT">
@@ -88,7 +88,7 @@
 <span class='line'> 81</span> </span><span class="WHIT">			        </span><span class="NAME">otherInput</span><span class="WHIT"> </span><span class="PUNC">:</span><span class="WHIT"> </span><span class="STRN">".other"</span><span class="PUNC">,</span><span class="WHIT">
 <span class='line'> 82</span> </span><span class="WHIT">			        </span><span class="COMM">/**
 <span class='line'> 83</span> 			         * 验证前的附加事件
-<span class='line'> 84</span> 			         * @type css class
+<span class='line'> 84</span> 			         * @type jQuery class
 <span class='line'> 85</span> 			         * @default ".other"
 <span class='line'> 86</span> 			         */</span><span class="WHIT">
 <span class='line'> 87</span> </span><span class="WHIT">			        </span><span class="NAME">init</span><span class="WHIT"> </span><span class="PUNC">:</span><span class="WHIT"> </span><span class="KEYW">null</span><span class="PUNC">,</span><span class="WHIT">
